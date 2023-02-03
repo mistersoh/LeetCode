@@ -9,12 +9,12 @@ class Solution:
         
         
         
-        while l < r:
+        while l <= r:
             
             midpoint = (l+r)//2
             
             if isBadVersion(midpoint):
-                r = midpoint
+                r = midpoint -1
                 
             else:
                 l = midpoint+1

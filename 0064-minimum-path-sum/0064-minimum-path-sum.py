@@ -13,4 +13,4 @@ class Solution:
             for y in range(1,n):
                 grid[x][y] += min(grid[x-1][y], grid[x][y-1])
 
-        return grid[m-1][n-1]
+        return grid[-1][-1]

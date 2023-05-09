@@ -3,7 +3,7 @@ from collections import defaultdict
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         
-        nums_dict = defaultdict(int)
+        nums_dict = {}
         
         for num in nums:
             if num in nums_dict:

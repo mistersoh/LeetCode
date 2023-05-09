@@ -9,5 +9,5 @@ class Solution:
             if num in nums_dict:
                 return True
             else:
-                nums_dict[num] += 1
+                nums_dict[num] = 1
         return False

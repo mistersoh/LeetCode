@@ -1,4 +1,10 @@
+# from collections import defaultdict
+
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        return sorted(t) == sorted(s)
+        # string_dict = defaultdict(int)
         
+        if len(s) != len(t):
+            return False
+        
+        return sorted(t) == sorted(s)

@@ -1,5 +1,3 @@
-from collections import defaultdict
-
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         

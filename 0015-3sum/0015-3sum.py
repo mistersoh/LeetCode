@@ -31,6 +31,11 @@ class Solution:
                     if temp_array not in answer:
                         
                         answer.append(temp_array)
+                        
+                    while l<r and nums[l] == nums[l+1]:
+                        l += 1
+                    while l>r and nums[r] == nums[r-1]:
+                        r -= 1
 
                     l += 1
                     

@@ -20,12 +20,9 @@ class Solution:
 #             return quickSort(l) + e + quickSort(r)
         
         fractions = []
-        cnt = 0
-        
         for idx, val in enumerate(arr):
             subarr = arr[idx+1:][::-1]
             for num in subarr:
-                cnt += 1
                 fractions += [(val, num)]
                 
         sorted_fractions = sorted(fractions, key=lambda x: x[0]/x[1])
